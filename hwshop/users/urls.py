@@ -11,7 +11,7 @@ from users.views import auth_view, logout_view
 
 urlpatterns = [
     path('registration/', registration_view, name = "registration"),
-    path('login', login_view, name="login"),
-    path('auth', auth_view, name="auth"),
-    path('logout', logout_view, name="logout"),
+    path('login/', login_view, name="login"),
+    path('auth/', auth_view, name="auth"),
+    path('logout/', logout_view, name="logout"),
 ]
